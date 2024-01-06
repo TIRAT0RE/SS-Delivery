@@ -1,0 +1,161 @@
+.container{
+	display: flex;
+	text-align: center;
+}
+.information{
+	width: 30%;
+	margin-left: 4%;
+	display:none;
+}
+.field{
+	display: flex;
+	flex-direction: column;
+	width: 62%;
+	border: 2px solid rgba(12, 66, 0, 0.8);
+	border-radius: 7%;
+	background-color: rgba(135, 132, 135, 0.2);
+}
+.top, .bottom{
+	height: 100px;
+	text-align: center;
+}
+.seats-top-bottom{
+	display: inline-block;
+	width:70%;
+	height: 85%;
+	margin-top: 5px;
+}
+.red{
+	background-color: rgba(255, 72, 69, 0.5);
+}
+.yellow{
+	background-color: rgba(207, 200, 4, 0.5);
+}
+.blue{
+	background-color: rgba(74, 122, 255, 0.5);
+}
+.green{
+	background-color: rgba(0, 255, 38, 0.5);
+}
+
+.left, .right{
+	width: 15%;
+	text-align: center;
+	vertical-align: middle;
+}
+.seats-left-right{
+	display: inline-block;
+	height: 98%;
+	width:95%;
+	margin-top:3px;
+}
+.right{
+	float: left;
+}
+.middle{
+	width: 70%;
+}
+.middle img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.center{
+	display: flex;
+	flex-direction: row;
+	height: 375px;
+}
+.buttonBuy{
+  height: 40px;
+  margin-top:25px;
+  background-color: #84c502;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  border-radius: 20px;
+  max-width: 100%;
+  min-width: 90px;
+  border: none;
+}
+.buttonBuy a{
+	text-decoration: none;
+	color: white;
+}
+.buttonBuy a:hover{
+	text-decoration: none;
+	color: #ee6344;
+}
+button{
+	text-align: center;
+}
+button:hover{
+	color:#ee6344;
+	transition: .2s;
+	background-color: white;
+	border: 1.5px solid #ee6344;
+}
+.seats-top-bottom button{
+	width: 7%;
+}
+.seats-left-right button{
+	height: 9.5%;
+	width: 27%;
+}
+.info-place{
+	margin-top: 40px;
+	font-size: 20px;
+	font-family: "Monospace";
+	text-align: center;
+}
+@media(max-width: 1100px){
+	.container{
+		flex-direction: column;
+	}
+	.information{
+		width: 50%;
+		text-align: center;
+		height: 200px;
+		margin-left: 20%;
+		margin-top: 80px;
+	}
+	.field{
+		width: 80%;
+	}
+	button{
+		font-size: 10px;
+	}
+	.center{
+		height: 350px;
+	}
+}
+@media(max-width: 850px){
+	.field{
+		width: 87%;
+	}
+	.seats-top-bottom button{
+	width: 6.5%;
+	}
+	.center{
+		height: 300px;
+	}
+}
+@media (max-width: 600px){
+	.field{
+		width: 98%;
+	}
+	.center{
+		height: 250px;
+	}
+}
+.toPay{
+	display: flex;
+	margin-left: 35%;
+}
+
