@@ -177,6 +177,10 @@ if (isset($_POST['phone'])) {
     <?php else: ?>
         <p>Немає замовлень з таким номером телефону.</p>
     <?php endif; ?>
+	
+	<footer>
+		<p>Якщо у вас є питання або скарги, дзвоніть за номером: 0 800 320 120</p>
+	</footer>
 
     <script>
         const checkbox = document.getElementById('checkbox');
